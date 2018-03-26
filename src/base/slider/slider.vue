@@ -1,6 +1,6 @@
 <template>
   <div class="slider" ref="slider">
-    <div class="slider-group" ref="slider">
+    <div class="slider-group" ref="sliderGroup">
       <slot></slot>
     </div>
     <div class="dots">
@@ -9,7 +9,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-improt BScroll from 'better-scroll'
+// improt BScroll from 'better-scroll'
 export default {
   props: {
     loop: {
@@ -29,7 +29,7 @@ export default {
     setTimeout(() => {
       this._setSliderWidth()
       this._initSlider()
-    },20)
+    }, 20)
   },
   methods: {
     _setSliderWidth() {
@@ -37,12 +37,11 @@ export default {
       let width = 0
       let sliderWidth = this.$refs.slider.clientWidth
 
-      for(let i = 0;i < this.children.length;i++){
+      for (let i = 0; i < this.children.length; i++) {
 
       }
     },
     _initSlider() {
-
     }
   }
 }
