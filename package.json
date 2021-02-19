@@ -1,6 +1,7 @@
 {
   "name": "vue-music",
   "version": "1.0.0",
+  "homepage": "https://zzzzed.github.io/Vue-music/index.html",
   "description": "vue音乐播放器",
   "author": "zyf <314493521@qq.com>",
   "private": true,
