@@ -13,7 +13,7 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@master   
       env:              
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.VUE_MUSIC }}
         BRANCH: gh-pages
         FOLDER: dist
         BUILD_SCRIPT: rm -rf node_modules && npm i && npm run build
